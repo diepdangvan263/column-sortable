@@ -1,5 +1,5 @@
 {
-  "name": "kyslik/column-sortable",
+  "name": "dieppl/column-sortable",
   "description": "Package for handling column sorting in Nova Framework 3",
   "keywords": [
     "sortable",
