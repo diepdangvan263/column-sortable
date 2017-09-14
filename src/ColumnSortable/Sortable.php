@@ -3,11 +3,11 @@
 namespace Kyslik\ColumnSortable;
 
 use BadMethodCallException;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Request;
-use Illuminate\Support\Facades\Schema;
+use Nova\Database\ORM\Relations\BelongsTo;
+use Nova\Database\ORM\Relations\HasOne;
+use Nova\Support\Facades\Config;
+use Nova\Support\Facades\Request;
+use Nova\Support\Facades\Schema;
 use Kyslik\ColumnSortable\Exceptions\ColumnSortableException;
 
 /**

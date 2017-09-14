@@ -2,8 +2,8 @@
 
 namespace Kyslik\ColumnSortable;
 
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Request;
+use Nova\Support\Facades\Config;
+use Nova\Support\Facades\Request;
 use Kyslik\ColumnSortable\Exceptions\ColumnSortableException;
 
 /**

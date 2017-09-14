@@ -2,8 +2,8 @@
 
 namespace Kyslik\ColumnSortable;
 
-use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\ServiceProvider;
+use Nova\Support\Facades\View;
+use Nova\Support\ServiceProvider;
 
 /**
  * Class ColumnSortableServiceProvider
@@ -31,7 +31,7 @@ class ColumnSortableServiceProvider extends ServiceProvider
             __DIR__.'/../config/columnsortable.php' => config_path('columnsortable.php'),
         ], 'config');
 
-        Blade::directive('sortablelink', function ($expression) {
+        View::directive('sortablelink', function ($expression) {
             $expression = ($expression[0] === '(') ? substr($expression, 1, -1) : $expression;
 
             return "<?php echo \Kyslik\ColumnSortable\SortableLink::render(array ({$expression}));?>";
